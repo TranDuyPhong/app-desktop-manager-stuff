@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{52255797-9297-4FD3-9F99-2FA13CA08702}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ManagerStuffs</RootNamespace>
+    <AssemblyName>ManagerStuffs</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v17.2.Core, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=4.5.1.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.4.5.1\lib\net40\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.SQLite, Version=1.0.108.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.108.0\lib\net45\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.108.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.108.0\lib\net45\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.108.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.108.0\lib\net45\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bll\CategoriesBll\CategoriesBll.cs" />
+    <Compile Include="Bll\HelperBll.cs" />
+    <Compile Include="Bll\PlaceStuffsBll\PlaceStuffsBll.cs" />
+    <Compile Include="Bll\RolesBll\RolesBll.cs" />
+    <Compile Include="Bll\StuffsBll\StuffsBll.cs" />
+    <Compile Include="Bll\StuffsPlaceStuffsBll\StuffsPlaceStuffsBll.cs" />
+    <Compile Include="Bll\UsersBll\UsersBll.cs" />
+    <Compile Include="Constants\ConfigConnectModel.cs" />
+    <Compile Include="Constants\ConfigModel.cs" />
+    <Compile Include="Constants\CustomLogEventArg.cs" />
+    <Compile Include="Constants\Excels\Export\ManipulationExportExcel.cs" />
+    <Compile Include="Constants\Excels\ManipulationExcel.cs" />
+    <Compile Include="Constants\Excels\ManipulationTable.cs" />
+    <Compile Include="Constants\Excels\TableModel.cs" />
+    <Compile Include="Constants\Languages\LanguageModel.cs" />
+    <Compile Include="Constants\Languages\LanguageManipulation.cs" />
+    <Compile Include="Constants\Languages\StranlateLanguage.cs" />
+    <Compile Include="Constants\Roles\EnumManupulations.cs" />
+    <Compile Include="Constants\GlobalConstants.cs" />
+    <Compile Include="Constants\LogModel.cs" />
+    <Compile Include="Constants\LogEvent.cs" />
+    <Compile Include="Constants\Roles\ManipulationAttributeEnum.cs" />
+    <Compile Include="Constants\Roles\ManipulationRoles.cs" />
+    <Compile Include="Constants\Roles\ManupulationControlNameAttribute.cs" />
+    <Compile Include="Constants\Roles\ManipulationRoleModel.cs" />
+    <Compile Include="Constants\Roles\ManipulationRoleModelUI.cs" />
+    <Compile Include="Constants\Roles\RoleModel.cs" />
+    <Compile Include="Dao\CategoriesDao\CategoriesDao.cs" />
+    <Compile Include="Dao\HelperDao.cs" />
+    <Compile Include="Dao\PlaceStuffsDao\PlaceStuffsDao.cs" />
+    <Compile Include="Dao\RolesDao\RolesDao.cs" />
+    <Compile Include="Dao\StuffsDao\StuffsDao.cs" />
+    <Compile Include="Dao\StuffsPlaceStuffsDao\StuffsPlaceStuffsDao.cs" />
+    <Compile Include="Dao\UsersDao\UsersDao.cs" />
+    <Compile Include="DataProvider.cs" />
+    <Compile Include="frmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangePassword.Designer.cs">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChangeProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangeProfile.Designer.cs">
+      <DependentUpon>frmChangeProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSystem.Designer.cs">
+      <DependentUpon>frmSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CategoriesModel\CategoriesModel.cs" />
+    <Compile Include="Model\InheritModel.cs" />
+    <Compile Include="Model\PlaceStuffsModel\PlaceStuffsModel.cs" />
+    <Compile Include="Model\PropertyNameAttribute.cs" />
+    <Compile Include="Model\RolesModel\RolesModel.cs" />
+    <Compile Include="Model\StuffsModel\StuffsModel.cs" />
+    <Compile Include="Model\StuffsModel\StuffsModelCustomUI.cs" />
+    <Compile Include="Model\UsersModel\UsersModel.cs" />
+    <Compile Include="Pages\ucCategories.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\ucCategories.Designer.cs">
+      <DependentUpon>ucCategories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ucExportExcels.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\ucExportExcels.Designer.cs">
+      <DependentUpon>ucExportExcels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ucPlaceStuffs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\ucPlaceStuffs.Designer.cs">
+      <DependentUpon>ucPlaceStuffs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ucRoles.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\ucRoles.Designer.cs">
+      <DependentUpon>ucRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ucStuffs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\ucStuffs.Designer.cs">
+      <DependentUpon>ucStuffs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ucStuffsPlaceStuffs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\ucStuffsPlaceStuffs.Designer.cs">
+      <DependentUpon>ucStuffsPlaceStuffs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ucUsers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\ucUsers.Designer.cs">
+      <DependentUpon>ucUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Querys\CategoriesQuerys\CategoriesQuerys.cs" />
+    <Compile Include="Querys\PlaceStuffsQuerys\PlaceStuffsQuerys.cs" />
+    <Compile Include="Querys\RolesQuerys\RolesQuerys.cs" />
+    <Compile Include="Querys\StuffsPlaceStuffsQuerys\StuffsPlaceStuffsQuerys.cs" />
+    <Compile Include="Querys\StuffsQuerys\StuffsQuerys.cs" />
+    <Compile Include="Querys\UsersQuerys\UsersQuery.cs" />
+    <EmbeddedResource Include="frmChangePassword.resx">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangeProfile.resx">
+      <DependentUpon>frmChangeProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSystem.resx">
+      <DependentUpon>frmSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\ucCategories.resx">
+      <DependentUpon>ucCategories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\ucExportExcels.resx">
+      <DependentUpon>ucExportExcels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\ucPlaceStuffs.resx">
+      <DependentUpon>ucPlaceStuffs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\ucRoles.resx">
+      <DependentUpon>ucRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\ucStuffs.resx">
+      <DependentUpon>ucStuffs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\ucStuffsPlaceStuffs.resx">
+      <DependentUpon>ucStuffsPlaceStuffs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\ucUsers.resx">
+      <DependentUpon>ucUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Config\Config.json" />
+    <None Include="Config\ConfigConnect.json" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\datebuy.png" />
+    <Content Include="images\categories.png" />
+    <Content Include="images\export-excel.png" />
+    <Content Include="images\import-excel.png" />
+    <Content Include="images\key.png" />
+    <Content Include="images\permission.png" />
+    <Content Include="images\placestuffs.png" />
+    <Content Include="images\settings.png" />
+    <Content Include="images\stuffs.png" />
+    <Content Include="images\stuffsplacestuffs.png" />
+    <Content Include="images\stuff_logo.png" />
+    <Content Include="images\user.png" />
+    <Content Include="images\usergroup.png" />
+    <Content Include="images\windows.png" />
+    <Content Include="Logs.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\System.Data.SQLite.Core.1.0.108.0\build\net45\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.108.0\build\net45\System.Data.SQLite.Core.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.Data.SQLite.Core.1.0.108.0\build\net45\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Data.SQLite.Core.1.0.108.0\build\net45\System.Data.SQLite.Core.targets'))" />
+  </Target>
+</Project>

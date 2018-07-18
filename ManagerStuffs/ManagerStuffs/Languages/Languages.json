@@ -1,0 +1,12 @@
+﻿[
+  {
+    "Name": "Vietnamese",
+    "StandFor": "Vi",
+    "Chosen": false
+  },
+  {
+    "Name": "English",
+    "StandFor": "En",
+    "Chosen": true
+  }
+]
